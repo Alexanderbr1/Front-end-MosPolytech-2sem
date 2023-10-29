@@ -1,0 +1,56 @@
+
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src:  url('../../fonts/inter-v12-latin-regular.woff2') format('woff2'),
+          url('../../fonts/inter-v12-latin-regular.woff') format('woff');
+  }
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: underline;
+    color: orange;
+
+    &:hover {
+        opacity: .5;
+        transition: 1s;
+    }
+}
+
+.btn {
+    background-color: #393939;
+    border-radius: 82px;
+    border: none;
+    color: white;
+
+    &:hover {
+        opacity: .5;
+        transition: 1s;
+    }
+}
+
+.title {
+    font-size: 1.5rem;
+    line-height: 3.9rem;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+

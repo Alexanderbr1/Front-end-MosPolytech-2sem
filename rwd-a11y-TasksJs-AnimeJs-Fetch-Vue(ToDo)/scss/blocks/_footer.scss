@@ -1,0 +1,140 @@
+.footer {
+    background-color:  #181818;
+    padding-top: 30px;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__logo-link {
+
+    }
+
+    &__logo {
+        margin-right: 57px;
+    }
+
+    &__list {
+        margin-top: 30px;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+        line-height: 169.02%;
+        color: #FFFFFF;
+        margin-top: 16px;
+    }
+
+    &__social-network {
+        display: flex;
+        align-items: center;
+    }
+
+    &__legal {
+        margin-top: 30px;
+        margin-bottom: 42px;
+    }
+
+    &__contacts {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color: #FFFFFF;
+        opacity: 0.9;
+        margin-top: 23px;
+        margin-bottom: 21px;
+    }
+
+    &__contacts-link {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        opacity: 0.9;
+    }
+
+    &__outro {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color: #FFFFFF;
+        opacity: 0.3;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+}
+
+.legal {
+    &__item {
+        margin-top: 16px;
+    }
+
+    &__item:first-child {
+        margin-top: 0;
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 169.02%;
+        color: #FFFFFF;
+    }
+}
+
+.line {
+    opacity: 0.1;
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    margin: 0;
+}
+
+@media (min-width:768px) {
+    .footer {
+        padding-top: 35px;
+        &__wrapper {
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+        &__legal {
+            display: flex;
+            margin-top: 0;
+            margin-bottom: 0;
+            gap: 8px;
+        }
+
+        &__social-network {
+            margin-right: 35px;
+            order: -1;
+        }
+
+        &__contacts {
+            margin-right: 35px;
+        }
+        
+    
+    }
+
+    .line-1 {
+        margin-top: 33px;
+    }
+
+    .line-2 {
+        display: none;
+    }
+
+    .legal {
+        &__item {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .footer {
+        &__social-network {
+            display: none;
+        }
+    }
+}

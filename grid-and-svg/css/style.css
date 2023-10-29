@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+}
+
+ul {
+    list-style: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Styles for first task start*/
+
+.grid-container-mondrian {
+    margin: 0 auto;
+    height: 319px;
+    width: 312px;
+    border-radius: 5% 5% 5% 5%;
+    display: grid;
+    grid-template-columns: 54px 111px 72px 57px;
+    grid-template-rows: 24px 111px 111px 54px;
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+    background: #000;
+    box-shadow: 10px 10px 10px grey;;
+}
+
+.box-1 {
+    background-color: #fff;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.box-2 {
+    background-color: yellow;
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.box-3 {
+    background-color: red;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+}
+
+.box-4 {
+    background-color: yellow;
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+.box-5 {
+    background-color: white;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.box-6 {
+    background-color: white;
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+.box-7 {
+    background-color: black;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.box-8 {
+    background-color: white;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.box-9 {
+    background-color: white;
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+    border-radius: 0px 0px 10px 0px;
+}
+
+/* Styles for first task end*/
+
+/* Styles for second task start*/
+
+.grid-container-chichold {
+    margin: 0 auto;
+    width: 700px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 115px 135px 450px;
+    grid-template-rows: 115px 50px 295px 160px auto auto;
+    background: #fafafa;
+    font-family: 'Anton', sans-serif;
+}
+
+.chichold__item1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    color: #000;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: -5px;
+}
+
+.chichold__item2 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    font-weight: 800;
+    line-height: 52px;
+}
+
+.chichold__item3 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    font-weight: 800;
+}
+
+.chichold__item4 {
+    background-color: black;
+    grid-column: 1 / 2;
+    grid-row: 4 / 7;
+}
+
+.chichold__item5 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    color: red;
+    font-size: 185px;
+    line-height: 153px;
+    font-weight: 700;
+    letter-spacing: -9px;
+}
+
+.chichold__item6 {
+    font-size: 43px;
+    font-weight: 700;
+    color: red;
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+}
+
+/* Styles for second task end*/
+
+/* Styles for third task start*/
+
+.grid-container-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "sidebar main";
+    height: 500px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border: 4px solid #444CF7;
+    text-align: center;
+}
+
+.sidebar__title {
+    color: #444CF7;
+    font-size: 50px;
+}
+
+.sidebar__item {
+    margin-top: 30px;
+}
+
+.sidebar__link {
+    text-decoration: none;
+    color: #444CF7;
+    font-size: 30px;
+}
+
+.sidebar__link:hover {
+    opacity: 0.5;
+}
+
+.main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.chart1 {
+    grid-column: span 6;
+}
+
+.chart2 {
+    grid-column: span 2;
+}
+
+.chart3 {
+    grid-column: span 2;
+}
+
+.chart4 {
+    grid-column: span 2;
+}
+
+.chart5 {
+    grid-column: span 3;
+}
+
+.chart6 {
+    grid-column: span 3;
+}
+
+/* Styles for third task end*/
+
+/* Styles for fourth task start*/
+
+.grid-container-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 300px));
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.gallery__item {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.gallery__img, .gallery__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+
+.gallery__link {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 30px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.gallery__item:hover .gallery__link {
+    opacity: 1;
+}
+
+/* Styles for fourth task end*/
+
+/* Styles for SVG start*/
+
+.task {
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Styles for icons start */
+
+.close-modal-window {
+    width: 60px;
+    height: 60px;
+}
+
+.home-page {
+    width: 70px;
+    height: 60px;
+}
+
+.search {
+    width: 60px;
+    height: 60px;
+}
+
+.close-modal-window:hover {
+    color:red;
+    transition: 1s;
+}
+
+.search:hover {
+    color:red;
+    transition: 1s;
+}
+
+.home-page:hover {
+    color:red;
+    transition: 1s;
+}
+
+.btn-menu {
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    right: 100px;
+}
+
+.burger-menu__line1--animation {
+    transform: rotate(45deg) translate(20px, -5px);
+    transition: 1s;
+}
+
+.burger-menu__line2--animation {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.burger-menu__line3--animation {
+    transform: rotate(-45deg) translate(-30px, -5px);
+    transition: 1s;
+}
+
+
+/* Styles for icons end */
+
+/* Styles for parallax start */
+
+.parallax {
+    background-color: aqua;
+    width: 320px;
+    height: 200px;
+}
+
+.parallax__plan-1-1, .parallax__plan-1-2 {
+    animation: parallax 4s linear 0s infinite;
+    left: -200%;
+}
+
+.parallax__plan-2-1, .parallax__plan-2-2 {
+    filter: blur(1px);
+    animation: parallax 7s linear 0s infinite;
+}
+
+.parallax__plan-3-1, .parallax__plan-3-2 {
+    filter: blur(2px);
+    animation: parallax 10s linear 0s infinite;
+}
+
+@keyframes parallax {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translate(100%);
+    }
+}
+
+/* Styles for parallax end */
+
+/* Styles for MAP start*/
+
+.map {
+    position: relative;
+    max-width: 400px;
+}
+
+.map__item {
+    position: absolute;
+    color: red;
+    font-weight: 700;
+    display: none;
+}
+
+.map__item-2 {
+    top: 255px;
+    left: 665px;
+}
+
+.map__item-1 {
+    top: 75px;
+    left: 665px;
+}
+
+.map__item-3 {
+    top: 96px;
+    left: 432px;
+}
+
+.map__item-4 {
+    top: 230px;
+    left: 432px;
+}
+
+.map__item--active {
+    display: block;
+}
+
+/* Styles for MAP end*/
+
+/* Styles for SVG end*/
+

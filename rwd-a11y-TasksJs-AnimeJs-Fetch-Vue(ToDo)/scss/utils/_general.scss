@@ -1,0 +1,111 @@
+// общие стили
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+// button:focus {
+//     outline: 2px solid #ff0000;
+//     outline-offset: 3px;
+// }
+
+
+.container {
+    max-width: 345px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
+}
+
+@media (min-width:1200px ) {
+    .container {
+        max-width: 1216px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+// Task 6, Lab 7
+
+.lock {
+    overflow: hidden;
+}
+
+// Task 7, Lab 7
+
+.toast {
+    position: fixed;
+    border-radius: 20px;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    width: fit-content;
+    max-width: 300px;
+    min-height: 100px;
+    opacity: 1;
+    padding: 10px;
+}
+
+.toast-active {
+    display: flex;
+}
+
+.toast-hidden {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    // margin-left: 15px;
+}
+
+
+
+
+
+
+

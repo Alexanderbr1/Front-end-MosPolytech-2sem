@@ -1,0 +1,111 @@
+.btn-start {
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    padding: 10px 20px;
+}
+
+.btn-create {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    padding: 10px 20px;
+}
+
+.created-element {
+    margin: 0 auto;
+}
+
+.created-element-square {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(88, 100%, 50%);
+}
+
+.created-element-circle {
+    width: 100px;
+	height: 100px;
+	background: hsl(30, 100%, 50%);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px
+}
+
+.created-element-triangle {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid hsl(60, 100%, 50%);
+}
+
+
+
+ .created-element-heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+.created-element-heart:before,
+.created-element-heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: hsl(360, 100%, 50%);
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.created-element-heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+.created-element-moon {
+    width: 100px; 
+    height: 100px; 
+    margin: -20px 0 20px 0;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 hsl(270, 100%, 50%);
+}
+
+.d31 {
+    width: 80px; 
+    height: 80px; 
+    margin: 10px;
+    background: #82707C;
+    position: relative;
+    transform: rotate(20deg);
+    }
+    .d31:before {
+    content: "";
+    height: 80px; 
+    width: 80px;
+    background: inherit;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    transform: rotate(135deg);
+    }

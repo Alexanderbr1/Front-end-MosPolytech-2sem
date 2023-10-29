@@ -1,0 +1,51 @@
+@use '../utils/variables';
+
+.product-card {
+    &__img {}
+
+    &__chapter {
+        color: variables.$color-tertialy;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+        margin-top: 17px;
+    }
+
+    &__name {
+        color: variables.$color-primary;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        font-weight: 600;
+        margin-top: 1px;
+    }
+
+    &__price {
+        max-width: fit-content;
+        color: variables.$color-primary;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+        margin-top: 18px;
+        padding: 8px 14px 8px 14px;
+        border: 1px solid variables.$color-primary;
+        border-radius: 2px;
+    }
+}
+
+@media (min-width:1200px) {
+    .product-card {
+        &__chapter {
+            margin-top: 11px;
+        }
+
+        &__name {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
+
+        &__price {
+            margin-top: 11px;
+        }
+    }
+}

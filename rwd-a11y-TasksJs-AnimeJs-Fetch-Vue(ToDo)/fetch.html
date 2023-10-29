@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <span class="loader preloader"></span>
+    <section class="gallery">
+        <button class="floating-button gallery__btn" onClick="window.location.reload();">Refresh</button>
+        <div class="gallery__wrapper"></div>
+    </section>
+    <section>
+        <form class="form" action="">
+            <label class="form__label">
+                Номер аудитории
+                <input name="class" class="form__input" type="text" required>
+            </label>
+            <label class="form__label">
+                Температура
+                <input name="temp" class="form__input" type="number" required>
+            </label>
+            <button class="floating-button form__btn" type="submit">Submit</button>
+        </form>
+    </section>
+    <div class="toast">
+        <button class="close">&#10060;</button>
+    </div>
+    <script src="js/lab10.js"></script>
+</body>
+</html>

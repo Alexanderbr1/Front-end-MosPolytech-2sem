@@ -1,0 +1,60 @@
+.intro {
+    padding-top: 28px;
+    overflow: hidden;
+
+    
+    background: url(../../img/intro-back-mob.jpg);
+    background-repeat: repeat;
+
+    &__wrapper {}
+
+    &__title {
+        font-size: 3.2rem;
+        line-height: 3.9rem;
+        letter-spacing: -0.03em;
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin-top: 8px;
+    }
+
+    &__link {
+        padding: 13px 39px 13px 40px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        display: inline-block;
+
+        &:focus {
+            outline: 2px solid #ff0000;
+            outline-offset: 3px;
+        }
+    }
+}
+
+@media (min-width:374px ) {
+    .intro {
+        background: url(../../img/intro-back-desk.jpg); /* Фоновый цвет и фоновый рисунок*/ /* Фон страницы фиксируется */
+	    background-repeat: repeat;
+    }
+}
+
+@media (min-width:1025px ) {
+    .intro {
+        padding-top: 90px;
+
+        &__wrapper {
+            display: flex;
+        }
+
+        &__title {
+            font-size: 4.4rem;
+            line-height: 5.3rem;
+        }
+
+        &__subtitle {
+            font-size: 1.8rem;
+        }
+    }
+}

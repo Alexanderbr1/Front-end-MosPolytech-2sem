@@ -1,0 +1,27 @@
+// UTILS
+@use 'utils/reset.scss';
+@use 'utils/visually-hidden.scss';
+@use 'utils/variables.scss';
+@use 'utils/mixins.scss';
+@use 'utils/general.scss';
+
+// BLOCKS
+@use 'blocks/componets';
+@use 'blocks/header';
+@use 'blocks/nav';
+@use 'blocks/intro';
+@use 'blocks/products';
+@use 'blocks/product-card';
+@use 'blocks/manual';
+@use 'blocks/step';
+@use 'blocks/photo-gallery';
+@use 'blocks/news';
+@use 'blocks/news-card';
+@use 'blocks/about-us';
+@use 'blocks/footer';
+
+// LAB8
+@use 'lab8.scss';
+@use 'lab10.scss';
+@use 'lab11.scss';
+

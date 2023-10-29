@@ -1,0 +1,22 @@
+$color-primary: #ffbe0b;
+$color-secondary: #fb5607;
+$color-tertiary: #ff006e;
+$color-quaternary: #8338ec;
+$color-quinary: #3a86ff;
+
+$colors: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+  "tertiary": $color-tertiary,
+  "quaternary": $color-quaternary,
+  "quinary": $color-quinary,
+);
+
+@mixin gradient($from, $to) {
+    background-image: linear-gradient($from, $to);
+}
+
+@function get-color($color) {
+  @return map-get($colors, $color);
+}
+

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>svg</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    
+    <!-- TASK ICONS -->
+    <div>
+      <svg width="250" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        
+        <!-- Закрытие модального окна -->
+        <symbol id="close-modal-window-icon">
+          <line x1="10" x2="50" y1="10" y2="50" stroke="currentColor" stroke-width="7"/>
+          <line x1="10" x2="50" y1="50" y2="10" stroke="currentColor" stroke-width="7"/>
+        </symbol>
+        <!-- Бургер-меню -->
+        <symbol id="burger-menu-icon">
+          <line x1="60" x2="110" y1="10" y2="10" stroke="currentColor" stroke-width="7"/>
+          <line x1="60" x2="110" y1="30" y2="30" stroke="currentColor" stroke-width="7"/>
+          <line x1="60" x2="110" y1="50" y2="50" stroke="currentColor" stroke-width="7"/>
+        </symbol>
+        <!-- Поиск -->
+        <symbol id="search-icon">
+          <circle cx="20" cy="20" r="15" stroke="currentColor" fill="transparent" stroke-width="5"/>
+          <line x1="28" x2="45" y1="30" y2="50" stroke="currentColor" fill="transparent" stroke-width="7"/>
+        </symbol>
+        <!-- Домашняя страница -->
+        <symbol id="home-page-icon">
+          <polyline points="0 20, 33 3, 66 20" stroke="currentColor" fill="transparent" stroke-width="5"/>
+          <polyline points="10 15, 10 50, 25 50, 25 32, 40 32, 40 50, 55 50, 55 15" 
+          stroke="currentColor" fill="transparent" stroke-width="5"/>
+        </symbol>
+      </svg>
+    </div>
+    <svg class="close-modal-window">
+      <use xlink:href="#close-modal-window-icon"/>
+    </svg>
+    <svg class="search">
+      <use xlink:href="#search-icon"/>
+    </svg>
+    <svg class="home-page">
+      <use xlink:href="#home-page-icon"/>
+    </svg>
+      
+      
+      
+      
+    <!-- Анимация бургер-меню -->
+    <button id="burger-menu" class="btn-menu">
+      <svg width="50" height="60">
+        <line class="burger-menu__line1" x1="0" x2="50" y1="10" y2="10" stroke="black" stroke-width="7"/>
+        <line class="burger-menu__line2" x1="0" x2="50" y1="30" y2="30" stroke="black" stroke-width="7"/>
+        <line class="burger-menu__line3" x1="0" x2="50" y1="50" y2="50" stroke="black" stroke-width="7"/>
+      </svg>
+    </button>
+
+    <!-- TASK PARALLAX -->
+    <div class="parallax task">
+      <svg width="320" height="200">
+
+        <!-- Third plan -->
+        <g class="parallax__plan-3-1">
+          <rect x="10" y="70" width="40" height="130"/>
+          <rect x="50" y="100" width="20" height="100"/>
+          <rect x="70" y="20" width="40" height="180"/>
+          <rect x="110" y="160" width="40" height="40"/>
+          <rect x="150" y="40" width="50" height="160"/>
+          <rect x="200" y="100" width="50" height="100"/>
+          <rect x="250" y="160" width="20" height="40"/>
+          <rect x="270" y="0" width="30" height="200"/>
+          <rect x="300" y="30" width="20" height="170"/>
+        </g>
+        <g class="parallax__plan-3-2">
+          <rect x="-310" y="70" width="40" height="130"/>
+          <rect x="-270" y="100" width="20" height="100"/>
+          <rect x="-250" y="20" width="40" height="180"/>
+          <rect x="-210" y="160" width="40" height="40"/>
+          <rect x="-170" y="40" width="50" height="160"/>
+          <rect x="-120" y="100" width="50" height="100"/>
+          <rect x="-70" y="160" width="20" height="40"/>
+          <rect x="-50" y="0" width="30" height="200"/>
+          <rect x="-20" y="30" width="20" height="170"/>
+        </g>
+        
+        
+
+        <!-- Second plan -->
+        <g class="parallax__plan-2-1">
+          <rect x="0" y="100" width="30" height="100" fill="grey"/>
+          <rect x="0" y="100" width="50" height="100" fill="grey"/>
+          <rect x="50" y="160" width="30" height="40" fill="grey"/>
+          <rect x="80" y="60" width="40" height="140" fill="grey"/>
+          <rect x="120" y="100" width="30" height="100" fill="grey"/>
+          <rect x="150" y="85" width="60" height="115" fill="grey"/>
+          <rect x="210" y="140" width="40" height="60" fill="grey"/>
+          <rect x="250" y="40" width="40" height="160" fill="grey"/>
+          <rect x="290" y="110" width="40" height="90" fill="grey"/>
+        </g>
+        <g class="parallax__plan-2-2">
+          <rect x="-320" y="100" width="30" height="100" fill="grey"/>
+          <rect x="-320" y="100" width="50" height="100" fill="grey"/>
+          <rect x="-270" y="160" width="30" height="40" fill="grey"/>
+          <rect x="-240" y="60" width="40" height="140" fill="grey"/>
+          <rect x="-200" y="100" width="30" height="100" fill="grey"/>
+          <rect x="-170" y="85" width="60" height="115" fill="grey"/>
+          <rect x="-110" y="140" width="40" height="60" fill="grey"/>
+          <rect x="-70" y="40" width="40" height="160" fill="grey"/>
+          <rect x="-30" y="110" width="40" height="90" fill="grey"/>
+        </g>
+
+        <!-- First plan -->
+        <g class="parallax__plan-1-1">
+          <rect x="20" y="170" width="20" height="30" fill="#cccccc"/>
+          <rect x="40" y="140" width="70" height="60" fill="#cccccc"/>
+          <rect x="110" y="155" width="30" height="45" fill="#cccccc"/>
+          <rect x="140" y="110" width="50" height="90" fill="#cccccc"/>
+          <rect x="210" y="125" width="50" height="75" fill="#cccccc"/>
+          <rect x="260" y="170" width="50" height="90" fill="#cccccc"/>
+        </g>
+        <g class="parallax__plan-1-1">
+          <rect x="-300" y="170" width="20" height="30" fill="#cccccc"/>
+          <rect x="-280" y="140" width="70" height="60" fill="#cccccc"/>
+          <rect x="-210" y="155" width="30" height="45" fill="#cccccc"/>
+          <rect x="-180" y="110" width="50" height="90" fill="#cccccc"/>
+          <rect x="-110" y="125" width="50" height="75" fill="#cccccc"/>
+          <rect x="-60" y="170" width="50" height="90" fill="#cccccc"/>
+        </g>
+
+      </svg>
+    </div>
+
+    <!-- TASK MAP -->
+    <div class="map task">
+      <svg width="400" height="401" viewBox="0 0 400 401" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- background -->
+        <rect x="0.5" y="1.5" width="399" height="399" fill="#EAEAEA" stroke="black"/>
+        <!-- sidewalk -->
+        <rect x="226" y="2" width="29" height="398" fill="#00B700"/>
+        <!-- left side for car -->
+        <rect x="173.5" y="1.5" width="22" height="398" fill="#C2C2C2" stroke="black"/>
+        <line x1="183.5" y1="2" x2="183.5" y2="400" stroke="white"/>
+        <!-- right side for car -->
+        <rect x="203.5" y="1.5" width="22" height="398" fill="#C2C2C2" stroke="black"/>
+        <line x1="214.5" y1="2" x2="214.5" y2="400" stroke="white"/>
+        <!-- tramway -->
+        <line x1="198" y1="4.5" x2="201" y2="4.5" stroke="#D48A00"/>
+        <line x1="198" y1="185.5" x2="201" y2="185.5" stroke="#D48A00"/>
+        <line x1="198" y1="145.5" x2="201" y2="145.5" stroke="#D48A00"/>
+        <line x1="198" y1="153.5" x2="201" y2="153.5" stroke="#D48A00"/>
+        <line x1="198" y1="161.5" x2="201" y2="161.5" stroke="#D48A00"/>
+        <line x1="198" y1="169.5" x2="201" y2="169.5" stroke="#D48A00"/>
+        <line x1="198" y1="177.5" x2="201" y2="177.5" stroke="#D48A00"/>
+        <line x1="198" y1="209.5" x2="201" y2="209.5" stroke="#D48A00"/>
+        <line x1="198" y1="193.5" x2="201" y2="193.5" stroke="#D48A00"/>
+        <line x1="198" y1="201.5" x2="201" y2="201.5" stroke="#D48A00"/>
+        <line x1="198" y1="217.5" x2="201" y2="217.5" stroke="#D48A00"/>
+        <line x1="198" y1="224.5" x2="201" y2="224.5" stroke="#D48A00"/>
+        <line x1="198" y1="238.5" x2="201" y2="238.5" stroke="#D48A00"/>
+        <line x1="198" y1="231.5" x2="201" y2="231.5" stroke="#D48A00"/>
+        <line x1="198" y1="11.5" x2="201" y2="11.5" stroke="#D48A00"/>
+        <line x1="198" y1="18.5" x2="201" y2="18.5" stroke="#D48A00"/>
+        <line x1="198" y1="25.5" x2="201" y2="25.5" stroke="#D48A00"/>
+        <line x1="198" y1="32.5" x2="201" y2="32.5" stroke="#D48A00"/>
+        <line x1="198" y1="39.5" x2="201" y2="39.5" stroke="#D48A00"/>
+        <line x1="199.5" y1="1" x2="199.5" y2="400" stroke="#D58A00"/>
+        <line x1="198" y1="246.5" x2="201" y2="246.5" stroke="#D48A00"/>
+        <line x1="198" y1="254.5" x2="201" y2="254.5" stroke="#D48A00"/>
+        <line x1="198" y1="263.5" x2="201" y2="263.5" stroke="#D48A00"/>
+        <line x1="198" y1="273.5" x2="201" y2="273.5" stroke="#D48A00"/>
+        <line x1="198" y1="281.5" x2="201" y2="281.5" stroke="#D48A00"/>
+        <line x1="198" y1="290.5" x2="201" y2="290.5" stroke="#D48A00"/>
+        <line x1="198" y1="297.5" x2="201" y2="297.5" stroke="#D48A00"/>
+        <line x1="198" y1="306.5" x2="201" y2="306.5" stroke="#D48A00"/>
+        <line x1="198" y1="316.5" x2="201" y2="316.5" stroke="#D48A00"/>
+        <line x1="198" y1="327.5" x2="201" y2="327.5" stroke="#D48A00"/>
+        <line x1="198" y1="338.5" x2="201" y2="338.5" stroke="#D48A00"/>
+        <line x1="198" y1="349.5" x2="201" y2="349.5" stroke="#D48A00"/>
+        <line x1="198" y1="360.5" x2="201" y2="360.5" stroke="#D48A00"/>
+        <line x1="198" y1="371.5" x2="201" y2="371.5" stroke="#D48A00"/>
+        <line x1="198" y1="381.5" x2="201" y2="381.5" stroke="#D48A00"/>
+        <line x1="198" y1="389.5" x2="201" y2="389.5" stroke="#D48A00"/>
+        <line x1="198" y1="46.5" x2="201" y2="46.5" stroke="#D48A00"/>
+        <line x1="198" y1="53.5" x2="201" y2="53.5" stroke="#D48A00"/>
+        <line x1="198" y1="67.5" x2="201" y2="67.5" stroke="#D48A00"/>
+        <line x1="198" y1="74.5" x2="201" y2="74.5" stroke="#D48A00"/>
+        <line x1="198" y1="81.5" x2="201" y2="81.5" stroke="#D48A00"/>
+        <line x1="198" y1="88.5" x2="201" y2="88.5" stroke="#D48A00"/>
+        <line x1="198" y1="95.5" x2="201" y2="95.5" stroke="#D48A00"/>
+        <line x1="198" y1="60.5" x2="201" y2="60.5" stroke="#D48A00"/>
+        <line x1="198" y1="102.5" x2="201" y2="102.5" stroke="#D48A00"/>
+        <line x1="198" y1="116.5" x2="201" y2="116.5" stroke="#D48A00"/>
+        <line x1="198" y1="130.5" x2="201" y2="130.5" stroke="#D48A00"/>
+        <line x1="198" y1="123.5" x2="201" y2="123.5" stroke="#D48A00"/>
+        <path d="M198 137.5H201" stroke="#D48A00"/>
+        <line x1="198" y1="109.5" x2="201" y2="109.5" stroke="#D48A00"/>
+        <line x1="198" y1="397.5" x2="201" y2="397.5" stroke="#D48A00"/>
+        <!-- pedestrian crossing -->
+        <line x1="215" y1="110" x2="215" y2="96" stroke="#FFFF00" stroke-width="2"/>
+        <line x1="184" y1="110" x2="184" y2="96" stroke="#FFFF00" stroke-width="2"/>
+        <line x1="225" y1="110" x2="225" y2="96" stroke="#FFFF00" stroke-width="2"/>
+        <path d="M174 110L174 96" stroke="#FFFF00" stroke-width="2"/>
+        <line x1="179" y1="110" x2="179" y2="96" stroke="#FFFF00" stroke-width="2"/>
+        <line x1="189" y1="110" x2="189" y2="96" stroke="#FFFF00" stroke-width="2"/>
+        <line x1="220" y1="110" x2="220" y2="96" stroke="#FFFF00" stroke-width="2"/>
+        <line x1="194" y1="110" x2="194" y2="96" stroke="#FFFF00" stroke-width="2"/>
+        <line x1="205" y1="110" x2="205" y2="96" stroke="#FFFF00" stroke-width="2"/>
+        <line x1="210" y1="110" x2="210" y2="96" stroke="#FFFF00" stroke-width="2"/>
+        <!-- building 1 -->
+        <g class="building-1">
+          <path d="M364 35L366.5 29.5L384.5 39L340.5 125L348 129L337.5 149L313 136.5L306.5 148.5L292.5 141.5L298.5 129.5L280 120L329.5 18L364 35Z" fill="#6C6C6C"/>
+          <rect x="278.764" y="135.324" width="34.0802" height="19.7148" transform="rotate(26.395 278.764 135.324)" fill="#6C6C6C"/>
+        </g>
+        <!-- building 2 -->
+        <g class="building-2">
+          <path d="M366 216.836L368.5 211.336L386.5 220.836L342.5 306.836L350 310.835L339.5 330.835L315 318.336L308.5 330.336L294.5 323.336L300.5 311.336L282 301.835L331.5 199.836L366 216.836Z" fill="#6C6C6C"/>
+          <rect x="280.764" y="317.16" width="34.0802" height="19.7148" transform="rotate(26.395 280.764 317.16)" fill="#6C6C6C"/>
+        </g>
+          <!-- building 3 -->
+        <g class="building-3">
+          <rect x="114.176" y="69.1425" width="33.8235" height="80" fill="#6C6C6C"/>
+          <rect x="48" y="92.8925" width="83.8235" height="30" fill="#B8B3B3"/>
+        </g>
+        <!-- building 4 -->
+        <g class="building-4">
+          <rect x="114.176" y="200.143" width="33.8235" height="80" fill="#6C6C6C"/>
+          <rect x="48" y="223.893" width="83.8235" height="30" fill="#B8B3B3"/>
+        </g>
+        <!-- building 5 -->
+        <g>
+          <rect x="9" y="323" width="132" height="11" fill="#B8B3B3"/>
+        </g>
+        <!-- others -->
+        <mask id="path-77-inside-1_8_3" fill="white">
+        <path d="M0 372H173V378H0V372Z"/>
+        </mask>
+        <path d="M0 372H173V378H0V372Z" fill="#C2C2C2"/>
+        <path d="M0 373H173V371H0V373ZM173 377H0V379H173V377Z" fill="black" mask="url(#path-77-inside-1_8_3)"/>
+        <mask id="path-79-inside-2_8_3" fill="white">
+        <path d="M261 400V2H267V400H261Z"/>
+        </mask>
+        <path d="M261 400V2H267V400H261Z" fill="#C2C2C2"/>
+        <path d="M262 400V2H260V400H262ZM266 2V400H268V2H266Z" fill="black" mask="url(#path-79-inside-2_8_3)"/>
+        <mask id="path-81-inside-3_8_3" fill="white">
+        <path d="M77 170H173V176H77V170Z"/>
+        </mask>
+        <path d="M77 170H173V176H77V170Z" fill="#C2C2C2"/>
+        <path d="M77 171H173V169H77V171ZM173 175H77V177H173V175Z" fill="black" mask="url(#path-81-inside-3_8_3)"/>
+        <mask id="path-83-inside-4_8_3" fill="white">
+        <path d="M110 285H173V291H110V285Z"/>
+        </mask>
+        <path d="M110 285H173V291H110V285Z" fill="#C2C2C2"/>
+        <path d="M110 286H173V284H110V286ZM173 290H110V292H173V290Z" fill="black" mask="url(#path-83-inside-4_8_3)"/>
+        <rect x="19" y="154" width="58" height="43" fill="#D9D9D9"/>
+        <g filter="url(#filter0_d_8_3)">
+        <path d="M45.321 182V171.091H49.0071C49.8629 171.091 50.5625 171.245 51.1058 171.554C51.6527 171.86 52.0575 172.273 52.3203 172.795C52.5831 173.317 52.7145 173.9 52.7145 174.543C52.7145 175.185 52.5831 175.77 52.3203 176.295C52.0611 176.821 51.6598 177.24 51.1165 177.552C50.5732 177.861 49.8771 178.016 49.0284 178.016H46.3864V176.844H48.9858C49.5717 176.844 50.0423 176.743 50.3974 176.54C50.7525 176.338 51.0099 176.064 51.1697 175.72C51.3331 175.372 51.4148 174.979 51.4148 174.543C51.4148 174.106 51.3331 173.715 51.1697 173.371C51.0099 173.026 50.7507 172.756 50.392 172.561C50.0334 172.362 49.5575 172.263 48.9645 172.263H46.642V182H45.321Z" fill="black"/>
+        </g>
+        <rect x="84" y="270" width="26" height="24" fill="#D9D9D9"/>
+        <g filter="url(#filter1_d_8_3)">
+        <path d="M93.321 288V277.091H97.0071C97.8629 277.091 98.5625 277.245 99.1058 277.554C99.6527 277.86 100.058 278.273 100.32 278.795C100.583 279.317 100.714 279.9 100.714 280.543C100.714 281.185 100.583 281.77 100.32 282.295C100.061 282.821 99.6598 283.24 99.1165 283.552C98.5732 283.861 97.8771 284.016 97.0284 284.016H94.3864V282.844H96.9858C97.5717 282.844 98.0423 282.743 98.3974 282.54C98.7525 282.338 99.0099 282.064 99.1697 281.72C99.3331 281.372 99.4148 280.979 99.4148 280.543C99.4148 280.106 99.3331 279.715 99.1697 279.371C99.0099 279.026 98.7507 278.756 98.392 278.561C98.0334 278.362 97.5575 278.263 96.9645 278.263H94.642V288H93.321Z" fill="black"/>
+        </g>
+        <path d="M103.293 64.561C99.23 66.5552 94.4837 66.6083 90.3771 64.7053L61.7898 51.4581C54.1966 47.9395 50.9513 38.8878 54.5791 31.3461L63.0138 13.8114C64.9881 9.70717 68.7202 6.72218 73.158 5.69797L90.5462 1.68489C92.4885 1.23662 94.5007 1.17998 96.4651 1.51829L118.833 5.37029C123.497 6.1736 127.509 9.13146 129.656 13.35L138.337 30.4103C142.132 37.869 139.09 46.991 131.577 50.6784L103.293 64.561Z" fill="#00B700"/>
+        <defs>
+        <filter id="filter0_d_8_3" x="41.321" y="171.091" width="15.3935" height="18.9091" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_3"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8_3" result="shape"/>
+        </filter>
+        <filter id="filter1_d_8_3" x="89.321" y="277.091" width="15.3935" height="18.9091" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_3"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8_3" result="shape"/>
+        </filter>
+        </defs>
+      </svg>
+      <div class="map__item map__item-1">Бориса Галушкина, 7</div>
+      <div class="map__item map__item-2">Бориса Галушкина, 9</div>
+      <div class="map__item map__item-3">Бориса Галушкина, 10</div>
+      <div class="map__item map__item-4">Бориса Галушкина, 12</div>
+    </div>
+  <script src="../js/map.js"></script>
+  <script src="/js/icons.js"></script>
+  </body>
+</html>

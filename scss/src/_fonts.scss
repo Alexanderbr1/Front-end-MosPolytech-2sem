@@ -1,0 +1,21 @@
+// Шрифт без засечек
+$font-sans: 'ABeeZee', sans-serif;
+
+// Шрифт с засечками
+$font-serif: 'Abhaya Libre', serif;
+
+@mixin font-face($family, $weight, $style, $file-path) {
+    @font-face {
+        font-family: $family;
+        font-weight: $weight;
+        font-style: $style;
+        src: $file-path;
+    }
+}
+
+
+@include font-face($font-sans, 400, normal, url('../fonts/ABeeZee/abeezee-v22-latin-regular.woff') format('woff'));
+@include font-face($font-sans, 700, normal, url('../fonts/ABeeZee/abeezee-v22-latin-regular.woff2') format('woff2'));
+@include font-face($font-serif, 400, normal, url('../fonts/AbhayaLibre/abhaya-libre-v13-latin-regular.woff') format('woff'));
+@include font-face($font-serif, 700, normal, url('../fonts/AbhayaLibre/abhaya-libre-v13-latin-regular.woff2') format('woff2'));
+

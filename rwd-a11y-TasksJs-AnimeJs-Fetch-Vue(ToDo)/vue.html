@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Vue</title>
+</head>
+<body>
+    <div id="app">
+        <form class="todo__form">
+            <input class="todo__input" type="text" placeholder="Введите текст записи" v-model="newRecord">
+            <button @click="addRecord" class="todo__btn" type="submit" v-bind:disabled="newRecord === '' || countCharacters < 0">Добавить</button>
+            <p v-show="newRecord !== ''" class="todo__counter">
+                Осталось символов: 
+                <span 
+                v-bind:class="{'red': countCharacters < 0, 'yellow': countCharacters >= 0 && countCharacters <= 10}">
+                {{ countCharacters }}
+                </span> 
+            </p>
+        </form>
+        <section class="todo__records">
+            <div class="records__wrapper">
+                <h2 class="records__title" v-if="records.length === 0">Нет записей</h2>
+                <h2 class="records__title" v-if="records.length === 1">Запись</h2>
+                <h2 class="records__title" v-if="records.length > 1">Записи</h2>
+                <span v-show="records.length > 1" class="records__counter">{{ countRecords }}</span>
+                <ul class="records__list">
+                    <li class="records__item" v-for="record in records" :key="record.id">
+                        {{ record.text }}
+                        <time class="record__time">{{ record.timestamp }}</time>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="js/lab11.js"></script>
+</body>
+</html>

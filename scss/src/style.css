@@ -1,0 +1,262 @@
+@font-face {
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ABeeZee/abeezee-v22-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ABeeZee/abeezee-v22-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/AbhayaLibre/abhaya-libre-v13-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/AbhayaLibre/abhaya-libre-v13-latin-regular.woff2") format("woff2");
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 50px);
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+.col-1 {
+  background-color: rgb(0, 195, 255);
+  border: 5px solid rgb(224, 183, 0);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.col-2 {
+  background-color: rgb(0, 195, 255);
+  border: 5px solid rgb(224, 183, 0);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.col-3 {
+  background-color: rgb(0, 195, 255);
+  border: 5px solid rgb(224, 183, 0);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.col-4 {
+  background-color: rgb(0, 195, 255);
+  border: 5px solid rgb(224, 183, 0);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.col-5 {
+  background-color: rgb(0, 195, 255);
+  border: 5px solid rgb(224, 183, 0);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.col-6 {
+  background-color: rgb(0, 195, 255);
+  border: 5px solid rgb(224, 183, 0);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.col-7 {
+  background-color: rgb(0, 195, 255);
+  border: 5px solid rgb(224, 183, 0);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.col-8 {
+  background-color: rgb(0, 195, 255);
+  border: 5px solid rgb(224, 183, 0);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.col-9 {
+  background-color: rgb(0, 195, 255);
+  border: 5px solid rgb(224, 183, 0);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.col-10 {
+  background-color: rgb(0, 195, 255);
+  border: 5px solid rgb(224, 183, 0);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.col-11 {
+  background-color: rgb(0, 195, 255);
+  border: 5px solid rgb(224, 183, 0);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.col-12 {
+  background-color: rgb(0, 195, 255);
+  border: 5px solid rgb(224, 183, 0);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+header,
+main,
+section,
+footer,
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-family: "ABeeZee", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  margin: 50px;
+  background-image: linear-gradient(#ffbe0b, #fb5607);
+}
+button:hover {
+  background-image: none;
+  background-color: #ff006e;
+}
+button:active {
+  background-color: #3a86ff;
+}
+
+a {
+  margin: 50px;
+  color: #ffbe0b;
+  text-decoration: none;
+}
+a:hover {
+  color: #fb5607;
+}
+a:active {
+  background-color: #ff006e;
+}
+a:visited {
+  color: #3a86ff;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Document</title>
+</head>
+<body id="body">  
+    <header class="header">
+        <div class="header__wrapper container">
+            <a class="skip-link" href="#main">Go to content</a>
+            <a class="header__logo logo" href="#"><img class="logo__img" src="img/logo.png" alt="verseser"></a>
+            <!-- navigation -->
+            <button id="burger-menu" class="btn-menu header__burger burger">
+                <span class="sr-only">burger-menu</span>
+                <svg width="50" height="60">
+                  <line class="burger-menu__line1" x1="0" x2="50" y1="10" y2="10" stroke="black" stroke-width="7"/>
+                  <line class="burger-menu__line2" x1="0" x2="50" y1="30" y2="30" stroke="black" stroke-width="7"/>
+                  <line class="burger-menu__line3" x1="0" x2="50" y1="50" y2="50" stroke="black" stroke-width="7"/>
+                </svg>
+            </button>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#intro" class="nav__link">Shop now</a></li>
+                    <li class="nav__item"><a href="#manual" class="nav__link">How to Wear</a></li>
+                    <li class="nav__item"><a href="#photo-gallery" class="nav__link">Colaboration</a></li>
+                    <li class="nav__item"><a href="#news" class="nav__link">Meta News</a></li>
+                    <li class="nav__item"><a href="#about-us" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="animation.html" class="nav__link">Animation</a></li>
+                    <li class="nav__item"><a href="fetch.html" class="nav__link">Fetch</a></li>
+                    <li class="nav__item"><a href="vue.html" class="nav__link">Vue</a></li>
+                </ul>
+            </nav>
+            <!-- list -->
+            <!-- social -->
+            <ul class="header__social social">
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="img/inst.svg" alt="instagram" class="social__icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="img/tiktok.svg" alt="tiktok" class="social__icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="img/twitter.svg" alt="twitter" class="social__icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="img/pinterest.svg" alt="pintersest" class="social__icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="img/discord.svg" alt="discord" class="social__icon">
+                    </a>
+                </li>
+            </ul>
+            <!-- <button class="header__cart-btn cart-btn">
+                <span class="sr-only">cart</span>
+                <svg class="cart-btn__cart" width="69" height="34" viewBox="0 0 69 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.25 24.5C18.8375 24.5 18.4845 24.3533 18.191 24.0597C17.897 23.7657 17.75 23.4125 17.75 23C17.75 22.5875 17.897 22.2343 18.191 21.9403C18.4845 21.6467 18.8375 21.5 19.25 21.5C19.6625 21.5 20.0155 21.6467 20.309 21.9403C20.603 22.2343 20.75 22.5875 20.75 23C20.75 23.4125 20.603 23.7657 20.309 24.0597C20.0155 24.3533 19.6625 24.5 19.25 24.5ZM26.75 24.5C26.3375 24.5 25.9845 24.3533 25.691 24.0597C25.397 23.7657 25.25 23.4125 25.25 23C25.25 22.5875 25.397 22.2343 25.691 21.9403C25.9845 21.6467 26.3375 21.5 26.75 21.5C27.1625 21.5 27.5157 21.6467 27.8097 21.9403C28.1033 22.2343 28.25 22.5875 28.25 23C28.25 23.4125 28.1033 23.7657 27.8097 24.0597C27.5157 24.3533 27.1625 24.5 26.75 24.5ZM18.6125 12.5L20.4125 16.25H25.6625L27.725 12.5H18.6125ZM19.25 20.75C18.6875 20.75 18.2625 20.503 17.975 20.009C17.6875 19.5155 17.675 19.025 17.9375 18.5375L18.95 16.7L16.25 11H15.4813C15.2688 11 15.0938 10.928 14.9562 10.784C14.8187 10.6405 14.75 10.4625 14.75 10.25C14.75 10.0375 14.822 9.85925 14.966 9.71525C15.1095 9.57175 15.2875 9.5 15.5 9.5H16.7188C16.8563 9.5 16.9875 9.5375 17.1125 9.6125C17.2375 9.6875 17.3312 9.79375 17.3938 9.93125L17.9 11H28.9625C29.3 11 29.5312 11.125 29.6562 11.375C29.7812 11.625 29.775 11.8875 29.6375 12.1625L26.975 16.9625C26.8375 17.2125 26.6563 17.4063 26.4313 17.5438C26.2063 17.6813 25.95 17.75 25.6625 17.75H20.075L19.25 19.25H27.5187C27.7312 19.25 27.9062 19.3217 28.0438 19.4653C28.1813 19.6093 28.25 19.7875 28.25 20C28.25 20.2125 28.178 20.3905 28.034 20.534C27.8905 20.678 27.7125 20.75 27.5 20.75H19.25ZM20.4125 16.25H25.6625H20.4125Z" fill="#181818"/>
+                    <rect x="39" y="8" width="16" height="16" rx="8" fill="#181818"/>
+                    <path d="M47.6044 12.7273V20H46.2869V14.0092H46.2443L44.5433 15.0959V13.8885L46.3509 12.7273H47.6044Z" fill="white"/>
+                    <rect x="0.5" y="0.5" width="68" height="33" rx="1.5" stroke="black"/>
+                </svg>
+            </button> -->
+            <!-- <button class="header__burger burger">
+                <svg class="burger__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 18H9V16H21V18ZM21 13H3V11H21V13ZM21 8H9V6H21V8Z" fill="#393939"/>
+                </svg>
+            </button> -->
+        </div>
+    </header>
+    <main id="main">
+        <!-- Разобраться с изображением на фоне -->
+        <section class="intro" id="intro">
+            <div class="intro__wrapper container">
+                <div class="intro__tiile-subtitle-link-wrapper">
+                    <h1 class="intro__title">Digital Fashion Studio</h1>
+                    <p class="intro__subtitle">We create digital clothing and connect it with real people</p>
+                    <a class="btn intro__link" href="#">Shop now</a>
+                </div>
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/intro-desktop.png" type="image/png">
+                    <img src="img/intro-mobile.png" alt="3 painted women in designer clothes">
+                </picture>
+            </div>
+        </section>
+        <!-- Разобраться со слайдером на радиобокс -->
+        <section class="products">
+            <div class="products__wrapper container">
+                <h2 class="products__title">BEST SELLER</h2>
+                <ul class="products__list">
+                    <!-- products__ -->
+                    <li class="products__item product-card">
+                        <a href="#">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="img/product-desk.jpg" type="image/png">
+                                <img src="img/product-mob.jpg" alt="cropped puffy jacket in oranje color">
+                            </picture>
+                        </a>
+                        <a href="#"><p class="product-card__chapter">BALMLABS</p></a>
+                        <a href="#"><p class="product-card__name">Cropped Puffy Jacket</p></a>
+                        <a href="#"><p class="product-card__price">$40.00 USD</p></a>
+                    </li>
+                    <li class="products__item product-card">
+                        <a href="#">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="img/product-desk.jpg" type="image/png">
+                                <img src="img/product-mob.jpg" alt="cropped puffy jacket in oranje color">
+                            </picture>
+                        </a>
+                        <a href="#"><p class="product-card__chapter">BALMLABS</p></a>
+                        <a href="#"><p class="product-card__name">Cropped Puffy Jacket</p></a>
+                        <a href="#"><p class="product-card__price">$40.00 USD</p></a>
+                    </li>
+                    <li class="products__item product-card">
+                        <a href="#">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="img/product-desk.jpg" type="image/png">
+                                <img src="img/product-mob.jpg" alt="cropped puffy jacket in oranje color">
+                            </picture>
+                        </a>
+                        <a href="#"><p class="product-card__chapter">BALMLABS</p></a>
+                        <a href="#"><p class="product-card__name">Cropped Puffy Jacket</p></a>
+                        <a href="#"><p class="product-card__price">$40.00 USD</p></a>
+                    </li>
+                    <li class="products__item product-card">
+                        <a href="#">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="img/product-desk.jpg" type="image/png">
+                                <img src="img/product-mob.jpg" alt="cropped puffy jacket in oranje color">
+                            </picture>
+                        </a>
+                        <a href="#"><p class="product-card__chapter">BALMLABS</p></a>
+                        <a href="#"><p class="product-card__name">Cropped Puffy Jacket</p></a>
+                        <a href="#"><p class="product-card__price">$40.00 USD</p></a>
+                    </li>
+                </ul>
+        
+                <button class="products__btn btn">View all</button>
+            </div>
+        </section>
+        <section class="manual" id="manual">
+            <div class="manual__wrapper container">
+                <h2 class="manual__title">How to wear a digital garment</h2>
+                <ul class="manual__list">
+                    <!-- manual step -->
+                    <li class="manual__item step">
+                        <h3 class="step__number">STEP 1</h3>
+                        <div>
+                            <p class="step__name">Choose outfit</p>
+                            <p class="step__description">Got to our <a class="step__link" href="#">store</a> and choose the outfits you like</p>
+                        </div>
+                    </li>
+                    <li class="manual__item step">
+                        <h3 class="step__number">STEP 2</h3>
+                        <div>
+                            <p class="step__name">Upload photo</p>
+                            <p class="step__description">To get the best results, read the photo  <a class="step__link" href="#">requirements</a></p>
+                        </div>
+                    </li>
+                    <li class="manual__item step">
+                        <h3 class="step__number">STEP 3</h3>
+                        <div>
+                            <p class="step__name">Pay</p>
+                            <p class="step__description">Pay with cash or crypto</p>
+                        </div>
+                    </li>
+                </ul>
+                <a class="manual__link btn" href="#">Visit shop</a>
+            </div>
+        </section>
+        <section class="photo-gallery" id="photo-gallery">
+            <h2 class="visuallyhidden">Colaboration</h2>
+            <div class="photo-gallery__wrapper">
+                <!-- img wrapper -->
+                <div class="photo-gallery__img-wrapper">
+                    <!-- <img class="photo-gallery__img1" src="img/photo-galerry-1-mob.jpg" alt="">
+                    <img class="photo-gallery__img2" src="img/photo-galerry-2-mob.jpg" alt="">
+                    <img class="photo-gallery__img3" src="img/photo-galerry-3-mob.jpg" alt="">
+                    <img class="photo-gallery__img4" src="img/photo-galerry-4-mob.jpg" alt=""> -->
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-galerry-1-desk.jpg" type="image/png">
+                        <img class="photo-gallery__img photo-gallery__img1" src="img/photo-galerry-1-mob.jpg" alt="a woman in designer clothes">
+                    </picture>
+                    <picture class="photo-gallery__img2">
+                        <source media="(min-width: 668px)" srcset="img/photo-galerry-2-desk.jpg" type="image/png">
+                        <img class="photo-gallery__img" src="img/photo-galerry-2-mob.jpg" alt="manikin in designer clothes">
+                    </picture>
+                    <picture class="photo-gallery__img3">
+                        <source media="(min-width: 668px)" srcset="img/photo-galerry-3-desk.jpg" type="image/png">
+                        <img class="photo-gallery__img" src="img/photo-galerry-3-mob.jpg" alt="manikin in designer clothes">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-galerry-4-desk.jpg" type="image/png">
+                        <img class="photo-gallery__img photo-gallery__img4" src="img/photo-galerry-4-mob.jpg" alt="a woman in designer clothes">
+                    </picture>
+                </div>
+                <a class="photo-gallery__link btn" href="#">
+                    <!-- svg class -->
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.00002 1.91675C10.9246 1.91675 11.1647 1.92383 11.9198 1.95925C12.6741 1.99466 13.1877 2.11296 13.6396 2.28862C14.1071 2.46854 14.5009 2.71221 14.8948 3.10533C15.255 3.45942 15.5337 3.88775 15.7115 4.3605C15.8864 4.81171 16.0054 5.32596 16.0409 6.08033C16.0741 6.83541 16.0834 7.07554 16.0834 9.00008C16.0834 10.9246 16.0763 11.1647 16.0409 11.9198C16.0054 12.6742 15.8864 13.1877 15.7115 13.6397C15.5342 14.1127 15.2554 14.5411 14.8948 14.8948C14.5406 15.2549 14.1123 15.5336 13.6396 15.7115C13.1884 15.8865 12.6741 16.0055 11.9198 16.0409C11.1647 16.0742 10.9246 16.0834 9.00002 16.0834C7.07548 16.0834 6.83535 16.0763 6.08027 16.0409C5.3259 16.0055 4.81235 15.8865 4.36044 15.7115C3.8875 15.5341 3.4591 15.2553 3.10527 14.8948C2.74502 14.5408 2.46631 14.1125 2.28856 13.6397C2.1129 13.1885 1.9946 12.6742 1.95919 11.9198C1.9259 11.1647 1.91669 10.9246 1.91669 9.00008C1.91669 7.07554 1.92377 6.83541 1.95919 6.08033C1.9946 5.32525 2.1129 4.81241 2.28856 4.3605C2.46581 3.88746 2.74459 3.45902 3.10527 3.10533C3.4592 2.74495 3.88757 2.46622 4.36044 2.28862C4.81235 2.11296 5.32519 1.99466 6.08027 1.95925C6.83535 1.92596 7.07548 1.91675 9.00002 1.91675ZM9.00002 5.45842C8.06071 5.45842 7.15988 5.83155 6.49568 6.49575C5.83149 7.15994 5.45835 8.06077 5.45835 9.00008C5.45835 9.93939 5.83149 10.8402 6.49568 11.5044C7.15988 12.1686 8.06071 12.5417 9.00002 12.5417C9.93933 12.5417 10.8402 12.1686 11.5044 11.5044C12.1685 10.8402 12.5417 9.93939 12.5417 9.00008C12.5417 8.06077 12.1685 7.15994 11.5044 6.49575C10.8402 5.83155 9.93933 5.45842 9.00002 5.45842ZM13.6042 5.28133C13.6042 5.0465 13.5109 4.8213 13.3449 4.65525C13.1788 4.4892 12.9536 4.39591 12.7188 4.39591C12.4839 4.39591 12.2587 4.4892 12.0927 4.65525C11.9266 4.8213 11.8334 5.0465 11.8334 5.28133C11.8334 5.51616 11.9266 5.74137 12.0927 5.90742C12.2587 6.07346 12.4839 6.16675 12.7188 6.16675C12.9536 6.16675 13.1788 6.07346 13.3449 5.90742C13.5109 5.74137 13.6042 5.51616 13.6042 5.28133ZM9.00002 6.87508C9.56361 6.87508 10.1041 7.09896 10.5026 7.49748C10.9011 7.89599 11.125 8.4365 11.125 9.00008C11.125 9.56367 10.9011 10.1042 10.5026 10.5027C10.1041 10.9012 9.56361 11.1251 9.00002 11.1251C8.43644 11.1251 7.89593 10.9012 7.49742 10.5027C7.0989 10.1042 6.87502 9.56367 6.87502 9.00008C6.87502 8.4365 7.0989 7.89599 7.49742 7.49748C7.89593 7.09896 8.43644 6.87508 9.00002 6.87508Z" fill="white"/>
+                    </svg>
+                    @Verserer
+                </a>
+            </div>
+        </section>
+        <section class="news" id="news">
+            <div class="news__wrapper container">
+                <h2 class="news__title">NEWS</h2>
+                <button class="news__btn btn">View all</button>
+                <ul class="news__list">
+                    <!-- item -->
+                    <li class="news__item news-card">
+                        <picture>
+                            <source class="news-card__img" media="(min-width: 1200px)" srcset="img/news-1-desk.jpg" type="image/jpg">
+                            <img class="news-card__img" src="img/news-1-mob.jpg" alt="manikin in designer clothes">
+                        </picture>
+                        <div>
+                            <time class="news-card__date" datetime="2022-05-01">01.05.2022</time>
+                            <p class="news-card__description">Gounders Natalia Modenova and Daria Shapovalova featured in America's Greatest Disruptors list by Newsweek</p>
+                            <a href="#" class="news-card__link btn">Read more</a>
+                        </div>
+                    </li>
+                    <li class="news__item news-card">
+                        <picture>
+                            <source class="news-card__img" media="(min-width: 1200px)" srcset="img/news-2-desk.jpg" type="image/jpg">
+                            <img class="news-card__img" src="img/news-2-mob.jpg" alt="a woman in designer clothes">
+                        </picture>
+                        <div>
+                            <time class="news-card__date" datetime="2022-05-01">01.05.2022</time>
+                            <p class="news-card__description">Gounders Natalia Modenova and Daria Shapovalova featured in America's Greatest Disruptors list by Newsweek</p>
+                            <a href="#" class="news-card__link btn">Read more</a>
+                        </div>
+                    </li>
+                    <li class="news__item news-card">
+                        <picture>
+                            <source class="news-card__img" media="(min-width: 1200px)" srcset="img/news-3-desk.jpg" type="image/jpg">
+                            <img class="news-card__img" src="img/news-3-mob.jpg" alt="manikin in designer clothes">
+                        </picture>
+                        <div>
+                            <time class="news-card__date" datetime="2022-05-01">01.05.2022</time>
+                            <p class="news-card__description">Gounders Natalia Modenova and Daria Shapovalova featured in America's Greatest Disruptors list by Newsweek</p>
+                            <a href="#" class="news-card__link btn">Read more</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="about-us" id="about-us">
+            <div class="about-us__wrapper container">
+                <div class="about-us__tit-descr-btn-wrapper">
+                    <h2 class="about-us__title">About Verseser</h2>
+                    <p class="about-us__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a class="about-us__link btn" href="#">Shop now</a>
+                </div>
+                <picture class="about-us__img">
+                    <source media="(max-width: 1250px)" srcset="img/about-us-mob.jpg" type="image/jpg">
+                    <!-- <img src="img/about-us-desk-1x.jpg" alt="about-us"> -->
+                    <img    srcset="img/about-us-desk-1x.jpg 1x,
+                                    img/about-us-desk.jpg 1.5x,
+                                    img/about-us-desk.jpg 2x"
+                            src="img/about-us-desk.jpg" alt="manikin in designer clothes">
+                </picture>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <a class="footer__logo-link" href="#"><img class="footer__logo" src="img/logo-footer.png" alt="verseser"></a>
+            <ul class="footer__social-network social-network">
+                <!-- class item link img -->
+                <li><a href="#"><img class="social-network__item" src="img/inst.svg" alt="instagram"></a></li>
+                <li><a href="#"><img class="social-network__item" src="img/tiktok.svg" alt="tiktok"></a></li>
+                <li><a href="#"><img class="social-network__item" src="img/twitter.svg" alt="twitter"></a></li>
+                <li><a href="#"><img class="social-network__item" src="img/pinterest.svg" alt="pinterest"></a></li>
+                <li><a href="#"><img class="social-network__item" src="img/discord.svg" alt="discord"></a></li>
+            </ul>
+            <ul class="footer__legal legal">
+                <li class="legal__item"><a class="legal__link" href="#">About</a></li>
+                <li class="legal__item"><a class="legal__link" href="#">How to wear</a></li>
+                <li class="legal__item"><a class="legal__link" href="#">Refund Policy</a></li>
+                <li class="legal__item"><a class="legal__link" href="#">Terms of service</a></li>
+                <li class="legal__item"><a class="legal__link" href="#">Privacy Policy</a></li>
+            </ul>
+            <hr class="line line-1">
+            <p class="footer__contacts">
+                CONTACT US 
+                <a class="footer__contacts-link" href="mailto:info@verseser.com">
+                    INFO@VERSESER.COM
+                </a>
+            </p>
+            <hr class="line line-2">
+            <p class="footer__outro">Verseser © 2022 All rights reserved</p>
+        </div>
+    </footer>
+    <!-- Здача 7, Лаба 7 -->
+    <div class="toast">
+        <button class="close">&#10060;</button>
+    </div>
+<script src="/js/lab7.js"></script>
+</body>
+</html>

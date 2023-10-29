@@ -1,0 +1,61 @@
+@use '../utils/variables';
+
+.step {
+
+    &__number {
+        max-width: fit-content;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        border: 1px solid #000000;
+        border-radius: 2px;
+        padding: 4px 8px;
+    }
+
+    &__name {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-weight: 600;
+        letter-spacing: -0.03em;
+        margin-top: 8px;
+    }
+
+    &__description {
+        font-size: 1.4rem;
+        line-height: 149.02%;
+        color: variables.$color-secondary;
+    }
+
+    &__link {
+        color: variables.$color-secondary;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}
+
+@media (min-width:1200px) {
+    .step {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 28px;
+        max-width: 535px;
+        margin-left: 278px;
+        &__number {
+            padding: 8px 14px;
+            max-height: 33px;
+        }
+
+        &__name {
+            font-size: 2.4rem;
+            line-height: 2.9rem;
+        }
+
+        &__description {
+            font-size: 1.7rem;
+            line-height: 169.02%;
+            color: variables.$color-secondary;
+        }
+    }
+}

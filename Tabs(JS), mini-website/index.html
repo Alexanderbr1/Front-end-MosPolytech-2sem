@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>rk</title>
+</head>
+<body>
+    <header>
+        <div class="header__wrapper">
+            <a href="#" class="header__logo logo">
+                <img class="logo__img" src="img/back-logo.jpg"  srcset="img/back-logo.jpg 2x" alt="backend-logo">
+            </a>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#intro" class="nav__link">INTRO</a></li>
+                    <li class="nav__item"><a href="#tabs" class="nav__link">TABS</a></li>
+                    <li class="nav__item"><a href="#list-section" class="nav__link">LIST</a></li>
+                    <li class="nav__item"><a href="#footer" class="nav__link">FOOTER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="intro" id="intro">
+            <div class="intro__wrapper">
+                <div class="intro__title-desc-btn-wrapper">
+                    <h1 class="intro__title title">BACKEND-DEVELOPMENT</h1>
+                    <p class="intro__description">Это логика работы сайта, скрытая от пользователя. Именно там происходит то, что можно назвать работой сайта.</p>
+                    <a class="intro__link btn" href="#">GET STARTED!</a>
+                </div>
+                <img class="intro__img" src="img/24002524-1670377407.jpg" alt="backend-intro">
+            </div>
+        </section>
+        <section class="tabs" id="tabs">
+            <div class="tabs__wrapper">
+                <h2 class="tabs__title title">Here are some topics, that you can explore</h2>
+                <div class="tabs">
+                    <ul class="tabs__nav tabs-nav">
+                        <li class="tabs-nav__item is-active" data-tab-name="tab-1">Internet</li>
+                        <li class="tabs-nav__item" data-tab-name="tab-2">Relational Databases</li>
+                        <li class="tabs-nav__item" data-tab-name="tab-3">Architectural Patterns</li>
+                    </ul>
+                    <div class="tab is-active tab-1">
+                        <img class="tab__img" src="img/nternet-logo.png" alt="internet">
+                        <p class="tab__description">The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols.<br>
+                            <span class="tab__follow-links">Visit the following resources to learn more:</span></p>
+                            <ul class="tab__list">
+                                <li class="tab__item"><a class="tab__link" href="https://cs.fyi/guide/how-does-internet-work">How does the Internet Work?</a></li>
+                                <li class="tab__item"><a class="tab__link" href="https://www.vox.com/2014/6/16/18076282/the-internet">The Internet Explained</a></li>
+                                <li class="tab__item"><a class="tab__link" href="http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm">How Does the Internet Work?</a></li>
+                                <li class="tab__item"><a class="tab__link" href="https://roadmap.sh/guides/what-is-internet">Introduction to Internet</a></li>
+                                <li class="tab__item"><a class="tab__link" href="https://www.youtube.com/watch?v=x3c1ih2NJEg">How does the Internet work?</a></li>
+                                <li class="tab__item"><a class="tab__link" href="https://www.youtube.com/watch?v=7_LPdttKXPc">How the Internet Works in 5 Minutes</a></li>
+                            </ul>
+                    </div>
+                    <div class="tab tab-2">
+                        <img src="img/db-logo.jpg" alt="database" class="tab__img">
+                        <p class="tab__description">A relational database is a type of database that stores and provides access to data points that are related to one another. Relational databases store data in a series of tables. Interconnections between the tables are specified as foreign keys. A foreign key is a unique reference from one row in a relational table to another row in a table, which can be the same table but is most commonly a different table.
+                        <br>
+                        <span class="tab__follow-links">Visit the following resources to learn more:</span></p>
+                        <ul class="tab__list">
+                            <li class="tab__item"><a class="tab__link" href="https://www.ibm.com/cloud/learn/relational-databases">Relational Databases</a></li>
+                            <li class="tab__item"><a class="tab__link" href="https://learnsql.com/blog/codd-article-databases/">51 Years of Relational Databases</a></li>
+                            <li class="tab__item"><a class="tab__link" href="https://www.edx.org/course/databases-5-sql">Databases and SQL</a></li>
+                            <li class="tab__item"><a class="tab__link" href="https://www.udacity.com/course/intro-to-relational-databases--ud197">Intro To Relational Databases</a></li>
+                            <li class="tab__item"><a class="tab__link" href="https://youtu.be/OqjJjpjDRLc">What is Relational Database</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab tab-3">
+                        <img class="tab__img" src="img/patterns-logo.jpg" alt="patterns">
+                        <p class="tab__description">An architectural pattern is a general, reusable solution to a commonly occurring problem in software architecture within a given context.The architectural patterns address various issues in software engineering, such as computer hardware performance limitations, high availability and minimization of a business risk.
+                            <br>
+                            <span class="tab__follow-links">Visit the following resources to learn more:</span></p>
+                        <ul class="tab__list">
+                                <li class="tab__item"><a class="tab__link" href="https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013">Architectural Patterns in a nutshell</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="list" id="list-section">
+            <div class="list__wrapper">
+                <h2 class="list__title">LIST</h2>
+                <p class="list__count">Количество элементов: <span id="counter">0</span></p>
+                <div class="list__input-btn-wrapper">
+                    <input class="list__input" type="text" id="newItemInput" placeholder="Введите название элемента"><br>
+                    <button class="list__btn btn" id="addItemButton">Добавить</button>
+                </div>
+                <ul id="list"></ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer__wrapper">
+            <p class="footer__outro">Bryantsev Alexander 221-322 © 28.04.2023 All rights reserved</p>
+        </div>
+    </footer>
+<script src="js/tabs.js"></script>
+<script src="js/list.js"></script>
+</body>
+</html>

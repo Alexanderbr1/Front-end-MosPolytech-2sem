@@ -1,0 +1,114 @@
+.products {
+    padding-bottom: 29px;
+    padding-top: 19px;
+    
+
+    &__title {
+        border: 1px solid #000000;
+        border-radius: 2px;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        letter-spacing: 0.05em;
+        width: fit-content;
+        padding: 4px 8px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 9px;
+        margin-top: 28px;
+    }
+
+    &__item:nth-child(3) {
+        display: none;
+    }
+
+    &__item:nth-child(4) {
+        display: none;
+    }
+
+    &__btn {
+        padding: 13px 145px 13px 145px;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width:1200px) {
+    
+    .products {
+        padding-bottom: 34px;
+        padding-top: 7px;
+
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__title {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            order: -1;
+            max-height: 31px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__list {
+            margin-top: 31px;
+            gap: 33px;
+            order: 1;
+        }
+
+        &__item:nth-child(3) {
+            display: block;
+        }
+    
+        &__item:nth-child(4) {
+            display: block;
+        }
+
+        &__btn {
+            margin-left: auto;
+            margin-top: 0;
+            padding: 13px 39px;
+        }
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .products {
+        &__item:nth-child(4) {
+            display: block;
+        }
+    }
+}
+
+@media (min-width:650px) and (max-width:1200px) {
+    .products {
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__item:nth-child(3) {
+            display: block;
+        }
+        &__list {
+            order: 1;
+        }
+        &__title {
+            order: -1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__btn {
+            margin-left: auto;
+            margin-top: 0;
+            padding: 13px 39px;
+        }
+    }
+}
